@@ -1,0 +1,40 @@
+/* Phong cách chung cho bubble */
+.bubble {
+    margin-bottom: 12px;
+    padding: 12px 15px;
+    border-radius: 25px;
+    max-width: 30%;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  /* Bubble của người dùng */
+  .user-bubble {
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    color: white;
+    align-self: flex-end; /* Đẩy bubble sang phải */
+    margin-left: auto; /* Đẩy toàn bộ sang phải */
+    text-align: right; /* Căn chữ bên trong sang phải */
+  }
+  
+  .user-bubble:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(116, 185, 255, 0.3);
+  }
+  
+  /* Bubble của bot */
+  .bot-bubble {
+    background: linear-gradient(135deg, #dfe6e9, #b2bec3);
+    color: #2d3436;
+    align-self: flex-start; /* Đẩy bubble sang trái */
+    margin-right: auto; /* Đẩy toàn bộ sang trái */
+    text-align: left; /* Căn chữ bên trong sang trái */
+  }
+  
+  .bot-bubble:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(223, 230, 233, 0.3);
+  }
+  

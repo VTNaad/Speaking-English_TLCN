@@ -1,0 +1,140 @@
+/* General Reset */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Flex Container */
+  .login-container {
+    display: flex; /* Use flexbox to create a two-column layout */
+    height: 100vh; /* Full height */
+  }
+  
+  /* Left Side (Register Box) */
+  .login-box {
+    background: rgba(255, 255, 255, 0.8); /* Adjust transparency for better visibility */
+    padding: 20px; /* Reduced padding for the register box */
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px; /* Fixed width for register box */
+    max-width: 100%;
+    margin-top: 0px; /* Adjust this value to change vertical position */
+  }
+  
+  /* Input Field Frame */
+  .input-frame {
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px;
+    margin: 10px 0; /* Space between inputs */
+  }
+  
+  /* Right Side (Background) */
+  .right-section {
+    flex: 1; /* Take up remaining space */
+    background-image: url('../assets/background3.jpg'); /* Set your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* Allow vertical stacking of items */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    color: black; /* Change text color to black */
+    text-align: center; /* Center text */
+    padding: 20px; /* Add padding */
+  }
+  
+  /* Title */
+  .login-box h2 {
+    color: black; /* Change color to black */
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  /* Input Fields */
+  .login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 0; /* Remove margin as it's handled by the input frame */
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  /* Button */
+  .login-box button {
+    width: 104%;
+    padding: 12px;
+    border-radius: 50px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .login-box button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #f44336;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  /* Links Section */
+  .signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: black; /* Change link color to black */
+  }
+  
+  /* Link Styles */
+  .link {
+    color: #4CAF50; /* Green to match the button color */
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .link:hover {
+    color: #66bb6a; /* Lighter green on hover */
+  }
+  
+  /* Description Section */
+  .description {
+    margin-top: 20px;
+    font-size: 18px; /* Increase font size */
+    color: black; /* Set color to black */
+    max-width: 600px; /* Set a maximum width for the description */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .login-box {
+      padding: 30px 20px;
+      width: 90%;
+    }
+  
+    .login-box h2 {
+      font-size: 28px;
+    }
+  
+    .login-box input {
+      padding: 12px;
+    }
+  
+    .login-box button {
+      padding: 12px;
+    }
+  
+    .right-section {
+      font-size: 36px; /* Adjust font size on smaller screens */
+    }
+  }
+  

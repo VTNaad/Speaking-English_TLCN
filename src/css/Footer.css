@@ -1,0 +1,14 @@
+.footer {
+    background-color: #333; /* Dark background */
+    color: white; /* White text color */
+    text-align: center; /* Center text */
+    padding: 0px;
+    position: relative; /* Ensure it stays at the bottom */
+    bottom: 0;
+    width: 100%; /* Full width */
+  }
+  
+  .footer p {
+    margin: 5px 0; /* Space between paragraphs */
+  }
+  

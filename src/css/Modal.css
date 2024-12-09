@@ -1,0 +1,45 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure the modal is above other content */
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .modal-actions {
+    margin-top: 20px;
+  }
+  
+  .modal-button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .modal-button:hover {
+    background-color: #4CAF50; /* Change color on hover */
+    color: white;
+  }
+
+  .modal-message {
+    color: black; /* Màu đen cho message */
+    font-size: 18px; /* Tùy chỉnh kích thước font nếu muốn */
+    margin-bottom: 20px; /* Khoảng cách dưới cho phần message */
+  }
+  

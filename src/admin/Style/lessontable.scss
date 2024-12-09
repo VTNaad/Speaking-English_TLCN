@@ -1,0 +1,103 @@
+.productable{
+    color: #616161;
+
+    &.dark-mode {
+        background-color: #111;
+    }
+
+    .tableCell{
+        background-color: whitesmoke !important;
+        color: #616161;
+
+        .cellWrapper{
+            display: flex;
+            align-items: center;
+
+            .image{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 1px solid #210876;
+                margin-right: 10px;
+            }
+        }
+
+        span{
+            background-color: #210876;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    }
+
+    .datagrid{
+        color: #616161;
+        border: none;
+        --DataGrid-containerBackground: #whitesmoke !important;
+    }
+
+    .cellScroll {
+        max-height: 50px;
+        overflow-y: auto; 
+        overflow-x: hidden; 
+        white-space: pre-line;
+        word-wrap: break-word; 
+        line-height: 2;
+    }
+
+    .cellWithStatus{
+        padding: 5px;
+        border-radius: 5px;
+
+        &.active{
+            background-color: rgba(0,128,0,0.05);
+            color: green;
+        }
+        &.pending{
+            background-color: rgba(255,217,0,0.05);
+            color: goldenrod;
+        }
+        &.passive{
+            background-color: rgba(255,0,0,0.05);
+            color: crimson;
+        }
+        &.true{
+            background-color: rgba(0,128,0,0.05);
+            color: blue;
+        }
+        &.false{
+            background-color: rgba(255,0,0,0.05);
+            color: red ;
+        }
+    }
+    .cellAction{
+        align-items: center;
+        display: flex;
+        gap: 15px;
+
+        .addButton {
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: green;
+            border: 1px dotted rgba(49, 153, 80, 0.6);
+            cursor: pointer;
+        }
+        
+        .viewButton{
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: darkblue;
+            border: 1px dotted rgba(0,0,139,0.596);
+            cursor: pointer;
+        }
+
+        .deleteButton{
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: crimson;
+            border: 1px dotted rgba(220,20,60,0.6);
+            cursor: pointer;
+        }
+    }
+}
