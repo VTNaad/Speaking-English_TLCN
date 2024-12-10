@@ -1,4 +1,12 @@
+[build]
+  base = "" # Thư mục gốc, để trống nếu không dùng monorepo
+  publish = "build" # Thư mục build
+  command = "npm install && npm run build" # Lệnh build
+
+[dev]
+  framework = "react" # Hỗ trợ React
+
 [[redirects]]
-from="/*"
-to="/index.html"
-status=200
+  from = "/*"
+  to = "/index.html"
+  status = 200
